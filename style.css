@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* .hind-madurai-light {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} */
+
+/* styling for navigation bar */
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px 24px 60px;
+    background-color: rgb(196, 196, 196);
+    max-width: 1920px;
+
+    
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 52px;
+    width: 123px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    background-color: rgb(203, 217, 205);
+    border-radius: 50px;
+}
+
+.btn-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styling for section 2 */
+.section-2 {
+    background: #013223;
+    background: radial-gradient(circle farthest-corner at center center, #013223 0%, #006747 0%, #013223 100%);
+    text-align: center;
+    color: white;
+    padding: 24px 60px 24px 60px;
+}
+.section-2 h2 {
+    margin: 11px 0 11px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section-2 p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-logo {
+    height: 92px;
+    width: 92px;
+}
