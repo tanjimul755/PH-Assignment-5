@@ -1,0 +1,9 @@
+/* Media query for devices with a viewport width of 320px or less */
+@media only screen and (max-width: 425px) {
+    /* Insert your responsive styles here */
+    .section-1 {
+        flex-direction: column;
+        padding: 12px 20px;
+        gap: 4px;
+    }
+}
