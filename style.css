@@ -30,6 +30,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.btn-text {
+    color: white;
+}
 /* .hind-madurai-light {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 300;
@@ -118,9 +122,14 @@ body{
 .section-3 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
-    padding: 24px 60px 24px 60px;
+    padding: 48px 60px 86px 60px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 .card-header{
     display: flex;
@@ -136,13 +145,23 @@ body{
     height: 360px; */
 }
 
-.card-logo {
+.card-logo-red {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
     width: 60px;
     background-color: rgba(255, 227, 226, 1);
+    border-radius: 16px;
+}
+
+.card-logo-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(223, 239, 255, 1);
     border-radius: 16px;
 }
 
@@ -205,9 +224,21 @@ body{
     padding: 24px;
 }
 
+.call-history-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.call-history-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .call-history-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
 }
