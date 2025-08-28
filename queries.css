@@ -1,9 +1,51 @@
 /* Media query for devices with a viewport width of 320px or less */
+@media only screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* @media only screen and (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+} */
+
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .section-3 {
+        padding: 24px 20px 40px 20px;
+        gap: 12px;
+        flex-direction: column;
+    }
+    
+}
+
+
 @media only screen and (max-width: 425px) {
-    /* Insert your responsive styles here */
     .section-1 {
         flex-direction: column;
         padding: 12px 20px;
         gap: 4px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+    .section-3 {
+        padding: 24px 20px 40px 20px;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .nav-btn-2 {
+    font-size: 14px;
+    border-radius: 8px;
     }
 }
