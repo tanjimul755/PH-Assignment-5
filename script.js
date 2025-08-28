@@ -4,14 +4,6 @@ document.querySelectorAll(".heart-toggle").forEach(btn => {
     btn.addEventListener("click", function (e) {
         e.preventDefault();
 
-        // let number = card.querySelector(".number").textContent;
-        // alert("❤️ Number" + number + "added to favorites!");
-
-        let card = this.closest('.card');
-        let numberEl = card.querySelector(".number");
-        let number = numberEl.textContent;
-        alert("❤️ (" + number + ") added to favorites!");
-
         let icon = this.querySelector("i");
         let liked = icon.classList.contains("fa-solid");
 
@@ -61,23 +53,29 @@ document.querySelectorAll(".call-btn").forEach(btn => {
     });
 });
 
+// Copy Functionality
 let copyEl = document.querySelector(".nav-items #nav-btn-2 span");
 
 document.querySelectorAll(".card-btn-1").forEach(btn => {
     btn.addEventListener("click", function (e) {
         e.preventDefault();
 
+        if (this.textContent.includes("Copied")) return;
+
         let card = this.closest(".card");
         let number = card.querySelector(".number").textContent;
 
         navigator.clipboard.writeText(number);
 
-        let copyCount = parseInt(copyEl.textContent);
+        let copyCount = parseInt(copyEl.textContent) || 0;
         copyEl.textContent = (copyCount + 1) + " Copy";
+
+        this.textContent = "✔ Copied";
 
         alert("Copied number: " + number);
     });
 });
+
 
 clearHistoryBtn.addEventListener("click", function (e) {
     e.preventDefault();
