@@ -86,6 +86,20 @@ body{
     border-radius: 50px;
     transition: background-color 0.3s, color 0.3s;
 }
+#nav-btn-2 {
+    background-color: rgba(0, 166, 62, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: clamp(40px, 8vw, 52px);
+    width: clamp(80px, 20vw, 123px);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+}
 .nav-btn-2:hover {
     background-color: rgb(0, 208, 76);
     color: white;
